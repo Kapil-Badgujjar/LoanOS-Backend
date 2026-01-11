@@ -13,7 +13,7 @@ class LoanApplication(Base):
 
     full_name = Column(String)
     mobile = Column(String)
-    pan = Column(String, index=True, unique=True)
+    pan = Column(String, index=True)
     dob = Column(Date)
 
     employment_type = Column(String)

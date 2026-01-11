@@ -37,9 +37,9 @@ app.include_router(credit.router)
 app.include_router(eligibility.router)
 app.include_router(admin.router)
 
-@app.on_event("startup")
-def startup_event():
-    seed_admin_user()
+# @app.on_event("startup")
+# def startup_event():
+#     seed_admin_user()
 
 @app.get("/")
 def health():
